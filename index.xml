@@ -1,19 +1,26 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>My New Hugo Project</title>
-    <link>http://localhost:1313/</link>
-    <description>Recent content on My New Hugo Project</description>
+    <title></title>
+    <link>//localhost:1313/</link>
+    <description>Recent content on </description>
     <generator>Hugo</generator>
-    <language>en-us</language>
-    <lastBuildDate>Sat, 04 Apr 2026 20:16:04 +0800</lastBuildDate>
-    <atom:link href="http://localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <language>en</language>
+    <lastBuildDate>Sat, 04 Apr 2026 20:50:31 +0800</lastBuildDate>
+    <atom:link href="//localhost:1313/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>first artile</title>
+      <link>//localhost:1313/posts/test1/</link>
+      <pubDate>Sat, 04 Apr 2026 20:50:31 +0800</pubDate>
+      <guid>//localhost:1313/posts/test1/</guid>
+      <description></description>
+    </item>
     <item>
       <title>Test a article</title>
-      <link>http://localhost:1313/posts/test/</link>
+      <link>//localhost:1313/posts/test/</link>
       <pubDate>Sat, 04 Apr 2026 20:16:04 +0800</pubDate>
-      <guid>http://localhost:1313/posts/test/</guid>
-      <description></description>
+      <guid>//localhost:1313/posts/test/</guid>
+      <description>&lt;p&gt;测试内容&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>
