@@ -4,41 +4,41 @@
     
         
         <url>
-            <loc>//localhost:1313/</loc>
+            <loc>/</loc>
             <lastmod>2026-04-04T20:50:31+08:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>//localhost:1313/posts/test1/</loc>
+            <loc>/posts/test1/</loc>
             <lastmod>2026-04-04T20:50:31+08:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>//localhost:1313/posts/</loc>
+            <loc>/posts/</loc>
             <lastmod>2026-04-04T20:50:31+08:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>//localhost:1313/posts/test/</loc>
+            <loc>/posts/test/</loc>
             <lastmod>2026-04-04T20:16:04+08:00</lastmod>
         </url>
         
     
         
         <url>
-            <loc>//localhost:1313/categories/</loc>
+            <loc>/categories/</loc>
         </url>
         
     
         
         <url>
-            <loc>//localhost:1313/tags/</loc>
+            <loc>/tags/</loc>
         </url>
         
     
