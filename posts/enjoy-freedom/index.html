@@ -91,7 +91,7 @@ Nov 22, 2025
 
 
 
-<div id="post-music-youtube-player" aria-hidden="true" style="position:absolute;left:-9999px;top:-9999px;width:1px;height:1px;overflow:hidden;"></div>
+<div id="post-music-youtube-player" aria-hidden="true" style="position:fixed;right:0;bottom:0;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden;"></div>
 
 <button
     id="post-music-toggle"
@@ -118,6 +118,7 @@ Nov 22, 2025
         var youtubePlayer = null;
         var youtubeReady = false;
         var pendingYoutubePlay = false;
+        var creatingYouTubePlayer = false;
 
         if (!toggle) {
             return;
@@ -184,6 +185,12 @@ Nov 22, 2025
                 return;
             }
 
+            if (creatingYouTubePlayer) {
+                return;
+            }
+
+            creatingYouTubePlayer = true;
+
             loadYouTubeApi(function () {
                 youtubePlayer = new window.YT.Player('post-music-youtube-player', {
                     width: '1',
@@ -201,11 +208,8 @@ Nov 22, 2025
                     events: {
                         onReady: function () {
                             youtubeReady = true;
+                            creatingYouTubePlayer = false;
                             onReady();
-                            if (pendingYoutubePlay) {
-                                pendingYoutubePlay = false;
-                                youtubePlayer.playVideo();
-                            }
                         },
                         onStateChange: function (event) {
                             if (event.data === window.YT.PlayerState.PLAYING) {
@@ -226,12 +230,20 @@ Nov 22, 2025
 
         setButtonState(false);
 
+        if (musicType === 'youtube') {
+            ensureYouTubePlayer(function () {
+                toggle.classList.add('music-toggle-ready');
+                toggle.setAttribute('title', 'Play music');
+            });
+        }
+
         toggle.addEventListener('click', function () {
             if (musicType === 'youtube') {
                 if (!youtubeReady || !youtubePlayer) {
                     pendingYoutubePlay = true;
+                    toggle.setAttribute('title', 'Loading music... tap again');
                     ensureYouTubePlayer(function () {
-                        youtubePlayer.playVideo();
+                        toggle.setAttribute('title', 'Play music');
                     });
                     return;
                 }
@@ -239,6 +251,7 @@ Nov 22, 2025
                 if (youtubePlayer.getPlayerState() === window.YT.PlayerState.PLAYING) {
                     youtubePlayer.pauseVideo();
                 } else {
+                    pendingYoutubePlay = false;
                     youtubePlayer.playVideo();
                 }
                 return;
