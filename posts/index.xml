@@ -2,25 +2,18 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Posts on </title>
-    <link>/posts/</link>
+    <link>https://yaguangtang.github.io/posts/</link>
     <description>Recent content in Posts on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 04 Apr 2026 20:50:31 +0800</lastBuildDate>
-    <atom:link href="/posts/index.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 22 Nov 2025 20:50:31 +0800</lastBuildDate>
+    <atom:link href="https://yaguangtang.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     <item>
-      <title>first artile</title>
-      <link>/posts/test1/</link>
-      <pubDate>Sat, 04 Apr 2026 20:50:31 +0800</pubDate>
-      <guid>/posts/test1/</guid>
-      <description></description>
-    </item>
-    <item>
-      <title>Test a article</title>
-      <link>/posts/test/</link>
-      <pubDate>Sat, 04 Apr 2026 20:16:04 +0800</pubDate>
-      <guid>/posts/test/</guid>
-      <description>&lt;p&gt;测试内容&lt;/p&gt;</description>
+      <title>做个自由人</title>
+      <link>https://yaguangtang.github.io/posts/enjoy-freedom/</link>
+      <pubDate>Sat, 22 Nov 2025 20:50:31 +0800</pubDate>
+      <guid>https://yaguangtang.github.io/posts/enjoy-freedom/</guid>
+      <description>&lt;p&gt;2025年应该是疫情后庶民追求自我娱乐最疯狂的一年了，演唱会、音乐节、体育赛事等各种活动都在火热进行中。随着裁员，消费降级，通缩等经济下行压力的加剧，越来越多的人开始追求精神上的满足和自我实现，而不是物质上的享受。人们渴望通过参加各种活动来放松身心，寻找乐趣，享受当下，曾经的消费主义时代已经过去，取而代之的是一个更加注重精神生活和自我实现的时代。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://pub-e0311710856a4cfda670b0d095431d35.r2.dev/IMG_2166.jpg&#34; alt=&#34;李小龙&#34; class=&#34;img-responsive&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;我也不例外，2020年以前似乎一直在忙碌，错过了诸多精彩的演唱会和活动。现在似乎是一种补偿心理，想要尽可能多地参加各种活动，享受生活的乐趣。另外一方面,似乎所有那个时代的演员、歌手都在这个时候举办演唱会，感觉是一个时代的集体怀旧。因为大家发现，在2015到2020年那个消费主义和泡沫的时期，并没有创造多少经典作品，被遗忘和鄙视的周传雄和王心凌等代表着曾经的实力艺人，重新回到了大众的视野。&lt;/p&gt;&#xA;&lt;p&gt;回到主题，第一次应该也是最后一次看许冠杰的演唱会了，年过70的他，第一次开演唱会是在1973年，实属香港电影、音乐发展活化石。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://pub-e0311710856a4cfda670b0d095431d35.r2.dev/IMG_2170.jpg&#34; alt=&#34;李小龙&#34; class=&#34;img-responsive&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;在许冠杰佛山演唱会上，第一次听到了这首发行1990年的歌曲《做个自由人》，当时的港人已经知道不久的未来要被“接收”了，心中不免有些惶恐和不安。&lt;/p&gt;&#xA;&lt;p&gt;&lt;img src=&#34;https://pub-e0311710856a4cfda670b0d095431d35.r2.dev/IMG_2149.jpg&#34; alt=&#34;李小龙&#34; class=&#34;img-responsive&#34;&gt;&lt;/p&gt;&#xA;&lt;p&gt;35年后再听此歌，依然感慨，做个简单自由快乐的人，依然需要勇气,决心和智慧，尤其是在这个充满不确定性的时代。无论是面对外部环境的变化，还是内心的挣扎，我们都需要坚持自己的信念，追求真正的自由和幸福。希望每个人都能找到属于自己的方向，天造之才，皆有其用。享受生活的美好。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

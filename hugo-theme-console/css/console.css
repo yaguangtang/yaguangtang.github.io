@@ -249,6 +249,64 @@ figure {
     padding-top: 0;
 }
 
+.music-toggle-btn {
+    position: fixed;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 56px;
+    height: 56px;
+    border: 0;
+    border-radius: 999px;
+    background: #ff0033;
+    color: #fff;
+    cursor: pointer;
+    z-index: 999;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
+    transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+}
+
+.music-toggle-btn:hover,
+.music-toggle-btn:focus-visible {
+    background: #e0002d;
+    transform: translateY(-50%) scale(1.05);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.35);
+}
+
+.music-toggle-btn:focus-visible {
+    outline: 2px solid var(--primary-color);
+    outline-offset: 2px;
+}
+
+.music-icon {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.music-icon-play {
+    width: 0;
+    height: 0;
+    border-top: 10px solid transparent;
+    border-bottom: 10px solid transparent;
+    border-left: 16px solid #fff;
+    margin-left: 3px;
+}
+
+.music-icon-pause {
+    width: 16px;
+    height: 18px;
+    background:
+        linear-gradient(
+            to right,
+            #fff 0,
+            #fff 5px,
+            transparent 5px,
+            transparent 11px,
+            #fff 11px,
+            #fff 16px
+        );
+}
+
 @media only screen and (max-width: 850px) {
     .site-name {
         width: 2ch;
@@ -309,5 +367,11 @@ figure {
     .footer {
         margin-top: 50px;
         padding-top: 5px;
+    }
+
+    .music-toggle-btn {
+        right: 12px;
+        width: 50px;
+        height: 50px;
     }
 }
