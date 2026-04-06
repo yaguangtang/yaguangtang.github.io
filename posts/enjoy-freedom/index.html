@@ -91,7 +91,7 @@ Nov 22, 2025
 
 
 
-<div id="post-music-youtube-player" aria-hidden="true" style="position:fixed;right:0;bottom:0;width:1px;height:1px;opacity:0;pointer-events:none;overflow:hidden;"></div>
+<div id="post-music-youtube-player" aria-hidden="true" style="position:fixed;left:-200px;bottom:0;width:200px;height:200px;pointer-events:none;overflow:hidden;"></div>
 
 <button
     id="post-music-toggle"
@@ -193,8 +193,8 @@ Nov 22, 2025
 
             loadYouTubeApi(function () {
                 youtubePlayer = new window.YT.Player('post-music-youtube-player', {
-                    width: '1',
-                    height: '1',
+                    width: '200',
+                    height: '200',
                     videoId: videoId,
                     playerVars: {
                         autoplay: 0,
@@ -210,6 +210,10 @@ Nov 22, 2025
                             youtubeReady = true;
                             creatingYouTubePlayer = false;
                             onReady();
+                            if (pendingYoutubePlay) {
+                                pendingYoutubePlay = false;
+                                youtubePlayer.playVideo();
+                            }
                         },
                         onStateChange: function (event) {
                             if (event.data === window.YT.PlayerState.PLAYING) {
