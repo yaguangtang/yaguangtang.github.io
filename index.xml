@@ -6,8 +6,15 @@
     <description>Recent content on </description>
     <generator>Hugo</generator>
     <language>en</language>
-    <lastBuildDate>Sat, 22 Nov 2025 20:50:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 09 Apr 2026 20:50:31 +0800</lastBuildDate>
     <atom:link href="https://yaguangtang.github.io/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>关于我</title>
+      <link>https://yaguangtang.github.io/about/</link>
+      <pubDate>Thu, 09 Apr 2026 20:50:31 +0800</pubDate>
+      <guid>https://yaguangtang.github.io/about/</guid>
+      <description>&lt;p&gt;云计算工程师，80后，唯物主义者，博客内容不分享技术，只记录生活所见所想，分享有趣的事物与人文艺术。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>做个自由人</title>
       <link>https://yaguangtang.github.io/posts/enjoy-freedom/</link>

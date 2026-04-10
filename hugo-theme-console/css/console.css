@@ -264,6 +264,19 @@ figure {
     z-index: 999;
     box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
     transition: transform 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.music-toggle-btn::before {
+    content: '';
+    position: absolute;
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    border: 2.5px solid #fff;
+    box-sizing: border-box;
 }
 
 .music-toggle-btn:hover,
@@ -280,30 +293,31 @@ figure {
 
 .music-icon {
     display: inline-block;
-    vertical-align: middle;
+    position: relative;
+    z-index: 1;
 }
 
 .music-icon-play {
     width: 0;
     height: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    border-left: 16px solid #fff;
+    border-top: 8px solid transparent;
+    border-bottom: 8px solid transparent;
+    border-left: 14px solid #fff;
     margin-left: 3px;
 }
 
 .music-icon-pause {
-    width: 16px;
-    height: 18px;
+    width: 14px;
+    height: 16px;
     background:
         linear-gradient(
             to right,
             #fff 0,
-            #fff 5px,
-            transparent 5px,
-            transparent 11px,
-            #fff 11px,
-            #fff 16px
+            #fff 4px,
+            transparent 4px,
+            transparent 10px,
+            #fff 10px,
+            #fff 14px
         );
 }
 
